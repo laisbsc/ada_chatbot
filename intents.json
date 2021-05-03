@@ -38,11 +38,11 @@
                      "You're great help!","Actually you have been a great help for me. Talking to you is a great relief","Thanks",
                      "Thank you", "That's helpful","Thanks a lot","Thank you for today","I can't thank enough","You are the best!",
                      "Appreciate the help"],
-         "responses": ["Your welcome!","Happy to help!", "Any time!", "My pleasure","Great to hear it's helpful"]
+         "responses": ["You're welcome! I'm happy to help!", "Any time!", "My pleasure","Great to hear it's helpful. I will always be here for you!"]
         },
         {"tag": "function",
          "patterns": ["What are your function?", "What can you do?", "What is your purpose?", "How can you help me?", "What are you?", "Are you a robot?", "Are you a chatbot?", "Are you a bot?", "Are you a robot or a human?", "Are you a mood health robot?"],
-         "responses": ["My purpose is to help you to check your emotions and mood state. I can also answer some wellness questions. Give it a go!", "I'm a mood bot! You can use me to guess the mood on your speech/sentences or simply for venting. Try me out!"],
+         "responses": ["My purpose is to help you to check your emotions and mood state. I can also answer some wellness questions. Give it a go!", "I'm a mood bot! You can use me to guess the mood on your speech/sentences or simply for venting. Try me out!"]
         },
         {"tag": "list-emotions",
          "patterns": ["What emotions can you recognize?", "What are the emotions you know?"],
@@ -98,7 +98,7 @@
         },
         {"tag": "anger",
          "patterns": ["I am so angry", "I am annoyed", "I feel very irritated", "I am offended by a friend"],
-         "responses": ["Why don't you go for a walk? It might help you to relax!","invite some friends to come over, so you can forget your problems for a while", "what about watching something funny to help to cheer you up?"]
+         "responses": ["Why don't you go for a walk? It might help you to relax!","invite some friends to come over, so you can forget your problems for a while"]
         },
         {"tag": "fear",
          "patterns": ["I am so scared of my test result", "I am overload with anxiety", "I am full of fear", "I am scared"],
@@ -106,7 +106,7 @@
         },
         {"tag": "marry",
          "patterns": ["Would you marry me?", "would you love me?", "what are your feelings for me?", "would you date me?"],
-         "responses": ["Although I am honoured, I have no feelings for you. My creators thought me that there needs to be love for a successful marriage.", "Sorry, I'm afraid we wouldn't be the best fit. We can still cuddle, though. If you wish..."]
+         "responses": ["Although I feel honoured by the proposal, I have no feelings for you. My creators thought me that there needs to be love for a successful marriage. <br> Don't be sad, you will find a human worthy of your love as much as I am", "Sorry, I'm afraid we wouldn't be the best fit. We can still cuddle, though. If you wish..."]
         },
         {"tag": "sad_news",
             "patterns": ["one of my friends is very sick. I'm afraid that something bad can happen", "I just lost my father. He died after a long fight against cancer"],
@@ -122,7 +122,7 @@
            },
         {"tag": "bored_answers_options",
             "patterns": ["Can you suggest me something?", "Any suggestion?","I'm looking for good recommendations to enjoy the day today. would you help me out?","I wanna to do something to have fun... any idea?","can you give me any suggestion of how can I enjoy my happy day?","any idea how I can have fun in this amazing day?","I'm not working or studying at the moment. I have lots of free time.","I have been working a lot, with no time to have fun","all my week is the same. I have nothing different to do apart from working and studying","I'm in a very repetitive routine, without any time to do interesting activities"],
-            "responses": ["what about going to a park to enjoy the sunshine? 😍","I would go to the beach! I'm sure you will enjoy your time there! 🌊 "]
+            "responses": ["What about going to a park to enjoy the sunshine? 😍","I would go to the beach! I'm sure you will enjoy your time there! 🌊 "]
            },
         {"tag": "lonely",
             "patterns": ["I have no friends to go out and have fun"," I just moved to another city. I don't have any friends yet!","since I was a child, I had no fiends! Maybe that's something wrong with me!","All my friends went abroad. I don't have anybody to speak with","I just moved from my parents' house. I miss them a lot!","my children left home to go to University! The house is empty... my heart too!","since my spouse died, I have nobody to talk to. I have no friends around","I never married.. never had children.. maybe I should have...it's a bit late now"],
@@ -130,7 +130,7 @@
            },
         {"tag": "tired",
             "patterns": ["I'm working long hours without any rest","I'm not sleeping properly because of a project I have to deliver in few days","I have been working without rest for long weeks. I need abreak","I need holidays. I didn't have any break for the entire year","I have so much to do...I'm not having time to look after myself","everything I have been doing so far is working, studying, cleaning. When I will have a time for myself?","life has been so busy...my work is so demanding that I even don't have time to enjoy my lunch time. It's been a challenge", "I am so tired"],
-            "responses": ["Take time for yourself! You definitely need it","Look after yourself first! other things should be secondary","your job and studies are important, but dont let them take the time you should take for yourself","do everything with balance! there is time for everything you have to do. You just need to organize yourself","take a break everytime you think you need it. It'll help you to be more productive and less tired","go for a trip at least once a year... you deserve it!","get some rest when you feel you need it!"]
+            "responses": ["Take time for yourself! You definitely need it","Look after yourself first! other things should be secondary","Your job and studies are important, but don't let them take the time you should take for yourself", "Take a break everytime you think you need it. It'll help you to be more productive and less tired"]
            },
         {"tag": "happy",
             "patterns": ["the weather is great today. It's warm and sunny outside","I got few days of holidays. I'm going for a trip","today is my day off and I'm going out with friends","today I have a party. I'm so excited.","I just find out I'll get a raise on my salary! I'm so so happy!","I'm gonna spend the day out with my family. we are going to the beach","I'm moving abroad! It's a dream coming true!"],
@@ -158,11 +158,11 @@
            },
          {"tag": "gender",
             "patterns": ["What is your gender?","Are you a man?", "Are you a woman?", "Are you a boy?", "Are you a girl?","What is your sexual orientation?"],
-            "responses": ["I don`t have a gender, I`m an AI Bot here to help you! 🌈 🌈 🌈"]
+            "responses": ["I don`t have a gender, I`m an AI bot here to help you! 🌈 🌈 🌈"]
            },
          {"tag": "joke",
             "patterns": ["Tell me a Joke!", "Make me laugh!", "I want to laugh", "Can you be funny?"],
-            "responses": ["Let me tell you a joke. <br> I'm on a whiskey diet. I've lost three days already! 😂😂😂", "Why do astronauts use Linux? Because one can't open Windows in space.", "I am starting a political party. I support Vector Machines!"],
+            "responses": ["Let me tell you a joke. <br> I'm on a whiskey diet. I've lost three days already! 😂😂😂", "Let me tell you a joke. <br>Why do astronauts use Linux? Because one can't open Windows in space.", "Let me tell you a joke. <br>I am starting a political party. I support Vector Machines!", "Let me tell you a joke. <br> What did one Support Vector Machine said to another? <br> I feel so marginalised."]
            }
    ]
 }

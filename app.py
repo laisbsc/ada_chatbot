@@ -3,7 +3,6 @@
 data: April | 2021
 """
 from chatbot_function import *
-import flask
 import time
 from flask import Flask, render_template, request
 
