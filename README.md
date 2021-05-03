@@ -4,7 +4,7 @@
 Capstone project. A friendly chatbot that helps humans identify their emotions.
 
 ## Run it localy from scratch
-- Fork the repository from the [original repo](https://github.com/laisbsc/VentBot/keras_chatbot)
+- Fork the repository from the [original repo](https://github.com/laisbsc/ada_chatbot)
 - then, from your own GitHub account, `git clone` your copied repository
 - `cd` into the repository
 - create a new virtual environment for the project
