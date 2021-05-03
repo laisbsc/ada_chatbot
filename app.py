@@ -1,5 +1,6 @@
 """
-@author: Lauro Ribeiro, Lais Carvalho and Telma Mendes.
+@author: Lauro Ribeiro
+data: April | 2021
 """
 from chatbot_function import *
 import flask
@@ -13,14 +14,17 @@ emotion_array = []
 app = Flask(__name__)
 app.static_folder = 'static'
 
+
 @app.route("/")
 def home():
     return render_template("index.html")
+
 
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
     return str(chatbot_response(userText))
+
 
 @app.route("/getsentiment")
 def get_bot_sentiment():
@@ -45,6 +49,7 @@ def get_bot_sentiment():
         emotion_cond = "Neutral 😐"
 
     return str('Based on my sentiment calculation you are currently feeling: <br><br> <i>Emotion:</i> <b>"'+emotion_cond+'"</b>  <br> <i>Mood State:</i> <b>"'+mood+'"<b>')
+
 
 if __name__ == "__main__":
     app.debug = True

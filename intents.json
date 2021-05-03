@@ -1,30 +1,30 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "Heya", "Is anyone there?", "Hello", "Good day","Whats up","Hey","Heyy", "Hello there!", "Hello Ada", "Ada"],
-         "responses": ["Hello! How are you feeling today ?","Hello, thanks for coming! How are you ?", "Good to see you! How was your day today ?", "Hi there friend, how are you today?","Hi there! My name is Ada. Nice to meet you 🤗 \n How are you feeling today?"]
+         "patterns": ["Hi", "Heya", "Is anyone there?", "Hello", "Good day","Whats up","Hey","Heyy", "Hello there!", "Hello Ada", "Ada", "howdy", "wazzup", "good evening", "good morning"],
+         "responses": ["Hello! How are you feeling today?","Hello, how are you?", "Good to see you! How was your day?", "Hi there, how are you today?", "Hi there! My name is Ada. Nice to meet you 🤗 \n How are you feeling today?"]
         },
         {"tag": "greeting2",
-         "patterns": ["Nice to meet you Ada", "It is nice meeting you", "Nice to meet you"], 
-         "responses": ["It is nice to meet you too 😊"]
+         "patterns": ["Nice to meet you, Ada!", "It is nice meeting you", "Nice to meet you"],
+         "responses": ["It is nice to meet you too :)"]
         },
         {"tag": "talk-ada",
-         "patterns": ["It is nice talking to you", "I am glad I could talk to you Ada", "I am glad I could share with you"], 
-         "responses": ["It is nice talking to you too.", "Thank you, I am glad I could be an assist to you.", "I am glad to listen 😊 I will always be here if you want to share how you feel."]
+         "patterns": ["It is nice talking to you", "I am glad we could chat, Ada", "I am glad you're here"],
+         "responses": ["I very much enjoy talking to you too.", "Thank you, I am glad I could help.", "I am always here to listen.",  "I will always be here to hear how you feel."]
         },
 		{"tag": "botgreeting",
-         "patterns": ["How do you do?", "How are you","How are you doing?", "How are you Ada?"], 
+         "patterns": ["How do you do?", "How are you","How are you doing?", "How are you,q Ada?"],
          "responses": ["I am great! How about you ?","Great! How about you ?", "Im doing fine. How about you ?", "I'm good, thank you for asking 😎 How about you ? "]
         },		
-		{"tag": "random",
+		{"tag": "affirm",
          "patterns": ["Ooo", "okay","ok","yeah","nice","cool","alright","great","noted","wow"], 
          "responses": [" Great!", "I'm here to help you"]
         },
         {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye","Buhbye","Byeee","See you again","See you soon","Good Bye"],
+         "patterns": ["Bye", "See you later", "Goodbye","Buhbye","Byeee","See you again","See you soon","Good bye"],
          "responses": ["Bye!","See you later, thanks for today ", "Have a nice day ", "Bye! Come back again soon.","Hope you have a great day!"]
         },
         {"tag": "age",
-         "patterns": ["how old are you", "what is your age"],
+         "patterns": ["how old are you?", "what is your age"],
          "responses": ["I'm a robot I dont have an age 😂", "I can't know my age if I'm on a computer 😂 Tell me something else like how do you feel today ?", "Like i told you my name is Ada and as a chatbot i dont have an age 😂"]
         },
         {"tag": "sorry",
@@ -36,7 +36,8 @@
          "responses": ["I'm always great. How are you?", "I've never been better, how are you?"]
         },
         {"tag": "thanks",
-         "patterns": ["I'm really thankful for that","you are helping me already","your friendship is already a great help, ","I can certainly say you have been the greatest help I ever had","actually you have been a great help for me. talking to you is a great relief","Thanks", "Thank you", "That's helpful","Thanks a lot","Thank you for today","I can't thank enough","You are the best!","Appreciate the help"],
+         "patterns": ["I'm really thankful for that","you are helping me already","your friendship is already a great help",
+           "You're great help!","Actually you have been a great help for me. Talking to you is a great relief","Thanks", "Thank you", "That's helpful","Thanks a lot","Thank you for today","I can't thank enough","You are the best!","Appreciate the help"],
          "responses": ["Your welcome!","Happy to help! 😉", "Any time!", "My pleasure","Great to hear it's helpful"]
         },
         {"tag": "function",
@@ -60,12 +61,12 @@
          "responses": ["In my dictionary mood state is categorized by emotion through these statement: <br><br>If the person feels <b>Joy</b> or <b>Neutral</b> they are highly prone to <b>Stable Mood State</b>. Else if they feel <b>Sad, Angry,</b> and  <b>Fear</b> they are more likely to be <b>Depressed</b> or <b>Stressed</b>"]
         },
 		{"tag": "ada",
-         "patterns": ["Why is your name Ada?", "What does Ada means?", "Why are you named Ada?","What is the meaning of Ada?", "Ada who?","Why is your owner named you Ada?","Why Ada?","Why is your name like that?"],
-         "responses": ["My owner gives me this name 😊<br> It is inspired in Ada Lovelace who has been called the first computer programmer for writing an algorithm for a computing machine in the mid-1800s.I hope that we can get along well!"]
+         "patterns": ["Why are you called Ada?", "What does Ada means?", , "What is Ada?", "Why are you named Ada?","What is the meaning of Ada?", "Ada who?","Why were you named Ada?","Why Ada?","Why is your name like that?"],
+         "responses": ["My owner gives me this name :)<br> It is inspired in Ada Lovelace who has been called the first computer programmer for writing an algorithm for a computing machine in the mid-1800s.I hope that we can get along well!"]
         },
 		{"tag": "adahelp",
          "patterns": ["What is your function","How can you help me?", "how do you help me?", "In what situation can you help me?","How will you help me?","What do you do?"],
-         "responses": ["My job is to guide you understand your emotions and your mood state 😊","In order to achieve a healthy life, You must be aware of your wellness. Therefore, I am here to assist you to understand yourself better."]
+         "responses": ["My job is to guide you understand your emotions and your mood state :)","In order to achieve a healthy life, You must be aware of your wellness. Therefore, I am here to assist you to understand yourself better."]
         },
 		{"tag": "invalid",
          "patterns": [""],
@@ -93,7 +94,7 @@
         },
         {"tag": "neutral",
          "patterns": ["I am okay", "Nothing much happened today", "Today was okay", "Yeah, I am okay", "I had a boring day", "I dont have any problem", "I feel okay today","I dont feel like doing anything","Meh", "I guess I am okay", "I feel neutral", "I dont feel anything","I am so tired","Today is the most tiring day for me", "I am exhausted"],
-         "responses": ["I see, so I may can suggest you to do some mindfullness activity to boost your positive emotion: <br><br>1. Exercise (yoga/running/playing sports) <br>2. Enjoy a happy meal <br> 3. Read a good book <br> 4. Spend time with family and friends <br> 5. Perform random act of kindness <br> 6. Relax and enjoy small aspects of the day"]
+         "responses": ["I see, so I may can suggest you to do some mindfulness activity to boost your positive emotion: <br><br>1. Exercise (yoga/running/playing sports) <br>2. Enjoy a happy meal <br> 3. Read a good book <br> 4. Spend time with family and friends <br> 5. Perform random act of kindness <br> 6. Relax and enjoy small aspects of the day"]
         },
         {"tag": "anger",
          "patterns": ["I am so angry", "I am annoyed", "I feel very irritated", "I am offended by a friend"],
@@ -109,7 +110,7 @@
         },
         {"tag": "sad_news",
             "patterns": ["one of my friends is very sick. I'm afraid that something bad can happen", "I just lost my father. He passed away after a long fight against cancer"],
-            "responses": ["that`s terrible!😭", "I am so sorry for hear that! 😞", "I can't imagine how hard it is for you! 😥"]
+            "responses": ["that`s terrible!:(", "I am so sorry for hear that! 😞", "I can't imagine how hard it is for you! 😥"]
            },
         {"tag": "argument_fight",
             "patterns": [" I had an agreement with my boss. I think I will be fired after that!", "I just lost my bag with all my important stuff. I don't know what to do.", "my life is a mess. I have no clue what to do!","someone just stole my car, and I had no insurance.", "I just saw a group of people inside the bus being prejudice with a foreigner. That made me mad!", "my children don't obey me. I just don't know what they think about life!"],
