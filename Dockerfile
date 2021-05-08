@@ -6,5 +6,4 @@ COPY . /app/
 WORKDIR /app
 RUN python train_chatbot.py
 RUN python chatbot_function.py
-EXPOSE 5000 5000
-CMD python app.py
+CMD gunicorn --bind 0.0.0.0:80 wsgi:app
